@@ -224,6 +224,7 @@ transition: transform .2s;  /* Animation */
   -webkit-transition: .5s all ease;
 	-moz-transition: .5s all ease;
 	transition: .5s all ease;
+	margin-top:2vh;
 }
 .CardEffect:hover {
 	 -ms-transform: scale(1.05); /* IE 9 */
