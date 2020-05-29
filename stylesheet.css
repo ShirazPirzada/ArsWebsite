@@ -187,6 +187,8 @@ section .section-title{
 	-webkit-transition: -webkit-transform .2s ease-in-out;
     transition:transform .2s ease-in-out;
 }
+
+/*These are the icons ***/
 #what-we-do .card .block-1:before{
     content: "\f19d";
 }
