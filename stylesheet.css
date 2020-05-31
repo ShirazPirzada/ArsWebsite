@@ -1,3 +1,48 @@
+*{
+	margin: 0;
+	padding:0;
+	text-decoration: none;
+	
+}
+
+#nav-bar #business{
+	color:#fff;
+	font-family: "Montserrat","Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#nav-bar{
+	position: sticky;
+	top:0;
+	z-index: 10;
+}
+.navbar {
+	background-image: linear-gradient(to right, #090979, #00d4ff);
+	padding: 0 !important;
+}
+
+.navbar-nav li
+{
+	padding:0 10px;
+}
+
+.navbar-nav li a
+{
+	color:#fff !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+.navbar-toggler-icon {
+	font-size: 18px;
+
+
+}
+.navbar-toggler
+{
+	outline: none !important;
+}
 
 p{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -5,61 +50,107 @@ p{
   margin: 0 0 30px 0;
 }
 
-h1,
-h2,
-
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-  padding: 0;
-}
-
-#Slide1{
-	width: 100%;
-	height:100vh;
+/*----------------------------Banner Section--------------------------*/
+#banner{
+	background-image: linear-gradient(to right, #090979, #00d4ff);
+	color: #fff;
 	
 }
-#Slide2{
-	width: 100%;
-	height:100vh;
-	
+#img-resize {
+  width:600px;
+  height:540px;
 }
+
+.promo-title{
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 100px;
+}
+
+/*---------------------Services Section-------------*/
+#services {
+	padding:80px 0;
+
+}
+.service-img
+{
+	width: 100px;
+	margin-top: 20px;
+}
+
+.service {
+	padding:20px;
+}
+.service h4{
+	padding:5px;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+
+.title::before{
+	content: '';
+	background: #1197EDFF;
+	height: 5px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	transform: translateY(63px);
+}
+.title::after{
+	content: '';
+	background: #1197EDFF;
+	height: 10px;
+	width: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	display: block;
+	transform: translateY(8px);
+}
+
+
+/*-----------------------Our Vision Section/AboutUs---------------------
+*/
+#about-us{
+	background: #f8f9fa;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+
+.ourVision{
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 8%;
+}
+#about-us ul li{
+	list-style: none;
+}
+
+#about-us .btn-primary{
+	box-shadow: none;
+	padding: 8px 25px;
+	border: none;
+	border-radius: 20px;
+	background-image: linear-gradient(to right, #090979, #00d4ff);
+
+}
+#about-us .btn-primary:hover{
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
 body {
   overflow-x:hidden;
-}
-
-.sectionVision{
-	margin:0px;
-	padding: 0px;
-
-}
-
-/*****Header******/
-#logo h3 {
-  font-size: 32px;
-  margin-top: 2vh;
-  padding: 0;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-
-#logo h3 a {
-  color: #0c2e8a;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-}
-
-#logo h3 a span {
-  color: #50d8af;
-}
-#logo img {
-  padding: 0;
-  margin: 0;
+  font-family: sans-serif;
+  /* This is for scroll effect
+  background: url(Images/sectionServices.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	*/
 }
 
 
@@ -68,9 +159,9 @@ body {
 /********TOP BAR*********/
 
 #topbar {
-  background: #fff;
+  
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  
   font-size: 14px;
 }
 
@@ -91,15 +182,15 @@ body {
 #topbar .contact-info .fa-phone {
   padding-left: 20px;
   margin-left: 20px;
-  border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #00d4ff;
 }
 
 #topbar .social-links a {
-  color: #555;
+  color: #fff;
   padding: 4px 12px;
   display: inline-block;
   line-height: 1px;
-  border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #00d4ff;
 }
 
 #topbar .social-links a:hover {
@@ -119,131 +210,110 @@ body {
 /********************
 /****Products********
 /*******************/
-.Products{
-	 background-image: linear-gradient(white, lightblue);
+#Products{
+	padding:80px 0;
 }
 
-
-
-
-/**********************
-/***** Services *******
-/*********************/
-
-section{
-    padding: 60px 0;
+#Products p {
+	padding-top: 10px;
 }
-section .section-title{
-	text-align:center;
-	color:#000000FF;
-	margin-bottom:50px;
-	text-transform:uppercase;
+#Products h4 {
+		padding:5px;
+	margin-top: 25px;
+	text-transform: uppercase;}
+.p-service {
+	padding-right: 50px;
+	padding-left: 60px;
 }
-#what-we-do{
-	background:#fff;
-	background-repeat: no-repeat;
-	background-size: auto;
-}
-#what-we-do .card{
-	padding: 1rem!important;
+
+#Products .btn-primary{
+	box-shadow: none;
+	padding: 8px 25px;
+	margin-top:25px;
 	border: none;
-	margin-bottom:1rem;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+	border-radius: 20px;
+
+	background-image: linear-gradient(to right, #090979, #00d4ff);
 }
-#what-we-do .card:hover{
-	-webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-	-moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-	box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-	-ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+#Products .btn-primary:hover{
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-#what-we-do .card .card-block{
-	padding-left: 50px;
-    position: relative;
+
+
+
+
+
+
+
+/*----------------------Products page Styling--------------------------*/
+#Products-of-productsPage
+{
+	padding:10px 0;
+	background: #f8f9fa;
 }
-#what-we-do .card .card-block a{
-	color: #0796F7FF !important;
-	font-weight:700;
-	text-decoration:none;
+
+.products-title{
+	font-size: 35px;
+	font-weight: 300;	
+	margin-top:8%;
+	text-align: left;
 }
-#what-we-do .card .card-block a i{
-	display:none;
+#info-lap
+{
+	text-align: left;
+	margin-top:-20px;
+}
+#info-desktop{
+	text-align: left;
+	margin-top:40px;
+}
+
+#namesOfcompanies
+{
+	text-align: left;
+	padding-left:20px;
+	padding-bottom:8px;
+	margin-top:5%;
+}
+
+
+/*Footer*/
+#footer{
+	background-image: linear-gradient(to right, #090979, #00d4ff);
+	color:#fff;
+}
+#footer h4 {
+	margin-top:20px;
+	margin-left:-15px;
+}
+.footer-box{
+	padding:20px;
+}
+.footer-box p {
+	margin-bottom: 20px;
+}
+.footer-box .fa{
+	margin-right: 8px;
+	font-size: 20px;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	padding-top: 7px;
+	border-radius: 2px;
+	background-image: linear-gradient(to right, #090979, #00d4ff);
+
+}
+.footer-box ul li {
+	margin-left: 20px;
+	padding-top:5px;
+	margin-top:-3px;
+}
+.footer-box ul li a{
+	color:#fff;
+	text-decoration: none;
 	
 }
-#what-we-do .card:hover .card-block a i{
-	display:inline-block;
-	font-weight:700;
-	
-}
-#what-we-do .card .card-block:before{
-	font-family: FontAwesome;
-    position: absolute;
-    font-size: 39px;
-    color: #0796F7FF;
-    left: 0;
-	-webkit-transition: -webkit-transform .2s ease-in-out;
-    transition:transform .2s ease-in-out;
-}
 
-/*These are the icons ***/
-#what-we-do .card .block-1:before{
-    content: "\f19d";
-}
-#what-we-do .card .block-2:before{
-    content: "\f013";
-}
-#what-we-do .card .block-3:before{
-    content: "\f021";
-}
-
-/*in case if u want to use more services
-
-
-#what-we-do .card .block-4:before{
-    content: "\f209";
-}
-#what-we-do .card .block-5:before{
-    content: "\f0a1";
-}
-#what-we-do .card .block-6:before{
-    content: "\f218";
-}*/
-#what-we-do .card:hover .card-block:before{
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);	
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-
-.CardEffect {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-transition: transform .2s;  /* Animation */
-  -webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-	margin-top:2vh;
-}
-.CardEffect:hover {
-	 -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05);
- 
-
-	}
-
-.btn{
-	
-	transition-timing-function: linear;
-}
-
-/* Button Hover*/
-.btn:hover{
-	 -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+.footer-box ul li a:hover{
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
